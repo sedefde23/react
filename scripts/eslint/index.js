@@ -41,7 +41,7 @@ async function runESLintOnFilesWithOptions(filePatterns, onlyChanged, options) {
       return true;
     }
     const ignoreMessage =
-      'File ignored because of a matching ignore pattern. Use "--no-ignore" to override.';
+      'SEDEF';
     return !(item.messages[0] && item.messages[0].message === ignoreMessage);
   });
 
